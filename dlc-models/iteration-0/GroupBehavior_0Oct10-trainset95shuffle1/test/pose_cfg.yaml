@@ -1,0 +1,57 @@
+all_joints:
+- - 0
+- - 1
+- - 2
+- - 3
+- - 4
+- - 5
+all_joints_names:
+- Head
+- HeadAttach
+- RightFin
+- LeftFin
+- TailAttach
+- TailTip
+dataset: training-datasets\iteration-0\UnaugmentedDataSet_GroupBehavior_0Oct10\GroupBehavior_0_PerksLab95shuffle1.pickle
+dataset_type: multi-animal-imgaug
+global_scale: 0.8
+init_weights: C:\Users\kperks\Anaconda3\envs\DLC-GPU\lib\site-packages\deeplabcut\pose_estimation_tensorflow\models\pretrained\resnet_v1_50.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+minconfidence: 0.01
+net_type: resnet_50
+nmsradius: 5.0
+num_joints: 6
+num_limbs: 14
+pairwise_predict: false
+partaffinityfield_graph:
+- - 0
+  - 1
+- - 1
+  - 2
+- - 1
+  - 3
+- - 4
+  - 5
+- - 1
+  - 4
+- - 2
+  - 5
+- - 0
+  - 5
+- - 0
+  - 4
+- - 2
+  - 3
+- - 2
+  - 4
+- - 0
+  - 3
+- - 3
+  - 4
+- - 0
+  - 2
+- - 3
+  - 5
+partaffinityfield_predict: true
+scoremap_dir: test
