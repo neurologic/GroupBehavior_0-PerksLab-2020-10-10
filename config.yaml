@@ -1,0 +1,94 @@
+    # Project definitions (do not edit)
+Task: GroupBehavior_0
+scorer: PerksLab
+date: Oct10
+multianimalproject: true
+
+    # Project path (change when moving around)
+project_path: D:\DLC\GroupBehavior_0-PerksLab-2020-10-10
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  D:\Videos_Gnathonemus\Basler_acA1300-200um__23511574__20201009_184818081.avi:
+    crop: 1, 1263, 208, 875
+individuals:
+- individual1
+- individual2
+- individual3
+- individual4
+- individual5
+uniquebodyparts: []
+multianimalbodyparts:
+- Head
+- HeadAttach
+- RightFin
+- LeftFin
+- TailAttach
+- TailTip
+skeleton:
+- - Head
+  - HeadAttach
+- - HeadAttach
+  - RightFin
+- - HeadAttach
+  - LeftFin
+- - TailAttach
+  - TailTip
+- - HeadAttach
+  - TailAttach
+- - RightFin
+  - TailTip
+- - Head
+  - TailTip
+- - Head
+  - TailAttach
+- - RightFin
+  - LeftFin
+- - RightFin
+  - TailAttach
+- - Head
+  - LeftFin
+- - LeftFin
+  - TailAttach
+- - Head
+  - RightFin
+- - LeftFin
+  - TailTip
+bodyparts: MULTI!
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton_color: black
+pcutoff: 0.1
+dotsize: 12
+alphavalue: 0.7
+colormap: plasma
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: multi-animal-imgaug
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+croppedtraining: true
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+video_sets_original:
+  D:\Videos_Gnathonemus\Basler_acA1300-200um__23511574__20201009_184818081.avi:
+    crop: 13, 1257, 241, 876
